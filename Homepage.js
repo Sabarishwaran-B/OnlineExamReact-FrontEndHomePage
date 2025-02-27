@@ -1,6 +1,7 @@
 import "./Home.css";
-const HomePage = () => {
-  
+import { useNavigate } from "react-router-dom";
+const Homepage = () => {
+  const navi=useNavigate();
   return (
     <div className="Home-container">
       {/* Navbar */}
@@ -14,11 +15,25 @@ const HomePage = () => {
         <div className="b">
         <div className="text-section">
           <h1>Hello!! <span role="img" aria-label="smile">😊</span></h1>
-          <p>Let's Take The Test!!</p>
-          <button className="click-button" onClick={() => window.location.href = "/login"}>Click</button>
+         
+         
+      
+        </div>
+        <div className="c">
+        <div className="box" onClick={()=>navi("/login")}>
+       <img src="\icons8-administrator-94.png" alt="Admin"></img>
+        <h6>Admin</h6>
+        </div>
+        <div className="box" onClick={()=>navi("/login")}>
+        <img src="\icons8-man-94.png" alt="instructor"></img>
+        <h6>Instructor</h6>
+        </div>
+        <div className="box" onClick={()=>navi("/login")}>
+        <img src="\icons8-student-94.png" alt="student"></img>
+        <h6>Student</h6>
         </div>
         </div>
-      </div>
+      </div>  </div>
       <div className="foot">
         <p>@copyright</p>
       </div>
@@ -26,4 +41,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Homepage;
