@@ -58,35 +58,40 @@
 /* Main Content */
 .main {
   flex: 1;
-  background-image: url("top-view-desk-concept-with-laptop.jpg");
+  background-image: url("background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 91%;
   display: flex;
   justify-content: center;
   padding: 24px;
 }
 
 .b{
- 
-  margin-right: 50%;
-  margin-top: 11%;
+ margin-top: 13%;
 }
-
-.text-section {
+.c{
+  display:flex;
+  flex-direction: row;
+  gap:100px;
+  align-items: center;
+}
+.box{
   border: 2px solid black;
-  padding: 50px;
+  padding:25px 50px ;
   border-radius: 26px;
   border:none;
   background-color: rgb(245, 236, 209);
   box-shadow: 5px 5px 10px ;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
+  align-items: center;
+  font-size: 27px;
+  z-index: 1;
 }
-.text-section:hover{
-  box-shadow: 5px 5px 20px rgb(195, 195, 95);
+.box:hover{
+  border: 1px solid rgb(237, 192, 134);
+  background-color: rgb(215, 202, 161);
+  box-shadow: 5px 5px 20px rgb(137, 137, 77);
 }
 
 .text-section h1 {
@@ -94,24 +99,8 @@
   font-weight: bold;
 }
 
-.text-section p {
-  font-size: 25px;
-  font-weight: medium;
-}
 
-.click-button {
-  background-color: black;
-  color: white;
-  font-size: 22px;
-  padding: 20px 35px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.click-button:hover{
- 
-  box-shadow: 5px 5px 10px rgb(211, 110, 110);
-}
+
 .foot{
   background-color: rgba(212, 212, 212, 1);
   padding: 15px 24px;
